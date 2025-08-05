@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* FFFBDE
+90D1CA
+129990
+096B68 */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  background-color: #fffbde;
+}
+
+.topHeader {
+  background-color: #096b68;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  border-bottom: 2px solid #116966;
+}
+
+.logo {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navTHeader ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.navTHeader a {
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.125s ease-in-out;
+}
+
+.navTHeader a:hover {
+  background-color: #90d1ca;
+  border-radius: 5%;
+  transform: scale(1.05);
+}
+
+.header {
+  background-color: #129990;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  /* position: fixed;
+    z-index: 999; */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 32px;
+  color: white;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  background-color: #129990;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer ul li {
+  padding: 15px 20px;
+}
+
+.drawer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+.brand,
+.brand a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.navCenter a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.125s ease-in-out;
+}
+
+.navCenter ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.navCenter ul li a:hover {
+  background-color: #90d1ca;
+  border-radius: 5%;
+  transform: scale(1.05);
+}
+
+#mobile-search-icon {
+  margin-right: 20px;
+  /* display: none; */
+}
+
+.search-wrapper {
+  position: relative;
+  display: none;
+}
+
+.search-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.search-form {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.search-form input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.search,
+.search a {
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.community-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #129990;
+  padding-bottom: 5px;
+  color: #096b68;
+}
+
+.forum,
+.activity,
+.user {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forum-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #129990;
+}
+
+.forum-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.activity p,
+.user p {
+  margin: 5px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info strong {
+  font-size: 1rem;
+  color: #129990;
+}
+
+.user-info span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .topHeader {
+    display: none; /* fix: gunakan topHeader, bukan top-header */
+  }
+
+  .navCenter,
+  .search {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .top-header {
+    display: none; /* sembunyikan top header */
+  }
+
+  #mobile-search-icon {
+    display: block;
+    order: 0; /* Urutan pertama di flex container */
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    display: block;
+    order: 1; /* Urutan kedua */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-wrapper input,
+  .search-wrapper button {
+    display: none; /* sembunyikan search asli */
+  }
+
+  .drawer.open ~ .search-wrapper .search-icon {
+    display: inline-block; /* munculkan ikon search saat drawer terbuka */
+  }
+}
+
+.drawer.open ~ .search-wrapper .search-icon {
+  display: inline-block;
+}
+
+.drawer.open ~ .search-wrapper .search-form {
+  display: block;
+}

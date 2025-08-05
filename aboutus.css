@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* FFFBDE
+90D1CA
+129990
+096B68 */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  background-color: #fffbde;
+}
+
+.topHeader {
+  background-color: #096b68;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  border-bottom: 2px solid #116966;
+}
+
+.logo {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navTHeader ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.navTHeader a {
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.125s ease-in-out;
+}
+
+.navTHeader a:hover {
+  background-color: #90d1ca;
+  border-radius: 5%;
+  transform: scale(1.05);
+}
+
+.header {
+  background-color: #129990;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  /* position: fixed;
+    z-index: 999; */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 32px;
+  color: white;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  background-color: #129990;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer ul li {
+  padding: 15px 20px;
+}
+
+.drawer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+.brand,
+.brand a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.navCenter a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.125s ease-in-out;
+}
+
+.navCenter ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.navCenter ul li a:hover {
+  background-color: #90d1ca;
+  border-radius: 5%;
+  transform: scale(1.05);
+}
+
+#mobile-search-icon {
+  margin-right: 20px;
+  /* display: none; */
+}
+
+.search-wrapper {
+  position: relative;
+  display: none;
+}
+
+.search-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.search-form {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.search-form input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.search,
+.search a {
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  /* background-color: white; */
+  max-width: 1200px;
+  height: auto;
+  margin: 40px 40px;
+}
+
+.section-satu,
+.section-empat {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 100px;
+  height: fit-content;
+  /* background-color: white; */
+}
+
+.section-satu-kiri,
+.section-tiga-kiri,
+.section-empat-kiri {
+  width: 55%;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.section-satu-kiri .mini-title,
+.section-tiga-kiri .mini-title,
+.section-empat-kiri .mini-title {
+  color: #129990;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.section-satu-kiri span,
+.section-tiga-kiri span,
+.section-empat-kiri span {
+  color: #998e12;
+}
+
+.section-satu-kiri .title,
+.section-tiga-kiri .title,
+.section-empat-kiri .title {
+  color: #129990;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section-satu-kiri .description,
+.section-tiga-kiri .description,
+.section-empat-kiri .description {
+  color: #998e12;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.section-satu-kanan,
+.section-tiga-kanan,
+.section-empat-kanan {
+  width: 600px;
+  height: 390px;
+  border-radius: 50px 5px;
+  padding: 0 10px;
+}
+
+img {
+  background-color: #096b68;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
+
+.section-dua {
+  /* background-color: white; */
+  margin: 150px 0;
+  padding: 10px;
+  height: fit-content;
+}
+
+.section-dua-atas h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  color: #998e12;
+}
+
+.section-dua-bawah {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+.section-dua-bawah-x {
+  text-align: center;
+  color: #129990;
+}
+
+.section-dua-bawah-x h1 {
+  font-size: 2rem;
+}
+
+.section-dua-bawah-x h4 {
+  font-size: 1rem;
+}
+
+.section-tiga {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  height: fit-content;
+  /* background-color: black; */
+  margin-bottom: 150px;
+}
+
+.section-tiga-kiri {
+    text-align: end;
+}
+
+.section-lima {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-keyF {
+    background-color: white;
+    width: 1100px;
+    height: 500px;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
+.point h3{
+    color: #129990;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.point ul li {
+    padding-left: 1ch;
+}
+
+.point ul li::marker {
+    content: "✨";
+}
+
+.section-lima {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.section-lima .title {
+    text-align: center;
+    color: #129990;
+}
+
+.section-lima .key {
+    padding-inline-start: 0;
+    color: #998e12;
+}
+
+.section-lima li {
+    color: #129990;
+}
+
+.section-lima .point-satu::marker {
+    content: "🧩";
+}
+
+.section-lima .point-dua::marker {
+    content: "🎨";
+}
+
+.section-lima .point-tiga::marker {
+    content: "📅";
+}
+
+@media screen and (max-width: 1168px) {
+  .section-satu,
+  .section-dua,
+  .section-tiga,
+  .section-empat,
+  .section-lima {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .section-satu-kanan img,
+  .section-tiga-kanan img,
+  .section-empat-kanan img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    align-items: center;
+  }
+
+  .section-satu-kiri,
+  .section-tiga-kiri,
+  .section-empat-kiri {
+    width: 90%;
+    text-align: center;
+  }
+
+  .section-satu-kiri .title,
+  .section-dua-kiri .title,
+  .section-tiga-kiri .title {
+    font-size: 2rem;
+  }
+
+  .section-satu-kiri .description,
+  .section-dua-kiri .description,
+  .section-tiga-kiri .description {
+    font-size: 0.95rem;
+  }
+
+  .img-keyF {
+    width: 70%;
+    height: 70%;
+  }
+
+  .img-keyF img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topHeader {
+    display: none; /* fix: gunakan topHeader, bukan top-header */
+  }
+
+  .navCenter,
+  .search {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .top-header {
+    display: none; /* sembunyikan top header */
+  }
+
+  #mobile-search-icon {
+    display: block;
+    order: 0; /* Urutan pertama di flex container */
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    display: block;
+    order: 1; /* Urutan kedua */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-wrapper input,
+  .search-wrapper button {
+    display: none; /* sembunyikan search asli */
+  }
+
+  .drawer.open ~ .search-wrapper .search-icon {
+    display: inline-block; /* munculkan ikon search saat drawer terbuka */
+  }
+
+  .section-satu,
+  .section-dua,
+  .section-tiga,
+  .section-empat,
+  .section-lima {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .section-satu-kanan,
+  .section-dua-kanan,
+  .section-tiga-kanan {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+  }
+
+  .section-satu-kiri,
+  .section-dua-kiri,
+  .section-tiga-kiri {
+    width: 90%;
+    text-align: center;
+  }
+
+  .section-satu-kiri .title,
+  .section-dua-kiri .title,
+  .section-tiga-kiri .title {
+    font-size: 2rem;
+  }
+
+  .section-satu-kiri .description,
+  .section-dua-kiri .description,
+  .section-tiga-kiri .description {
+    font-size: 0.95rem;
+  }
+
+  .img-keyF {
+    width: 90%;
+  }
+}
+
+.drawer.open ~ .search-wrapper .search-icon {
+  display: inline-block;
+}
+
+.drawer.open ~ .search-wrapper .search-form {
+  display: block;
+}

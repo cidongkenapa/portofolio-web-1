@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="submission.css" />
+    <link rel="icon" href="/asset/favicon/favicon-32x32.png" type="image/png"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Picverse</title>
+  </head>
+  <body>
+    <header>
+      <div class="topHeader">
+        <div class="logo">Picverse</div>
+
+        <div class="navTHeader">
+          <ul>
+            <li><a href="">Help</a></li>
+            <li>|</li>
+            <li><a href="">Sign Up</a></li>
+            <li>|</li>
+            <li><a href="">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="brand">
+          <a href="index.html"><img src="/asset/favicon/favicon-32x32.png" alt=""></a>
+        </div>
+        <div class="navCenter">
+          <ul>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="search-container">
+          <span
+            class="material-symbols-outlined search-icon"
+            id="mobile-search-icon"
+            >search</span
+          >
+          <div class="hamburger-menu">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+        </div>
+        <div class="search-wrapper" id="search-wrapper">
+          <input type="text" placeholder="Search..." id="search-input" />
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+    </header>
+    <div class="drawer" id="drawer">
+      <ul>
+        <li><a href="submission.html">Submission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href="">Sign In</a></li>
+        <li><a href="">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <main class="container">
+      <div class="card">
+        <h1 class="card-brand">Picverse</h1>
+        <div class="card-desc">
+          <h1 class="card-title">Start your journey with us</h1>
+          <h1 class="card-description">
+            Discover for the best community of art and define your choice
+          </h1>
+        </div>
+        <div class="card-on-card">
+          <h2 class="review">
+            Simply unbelievable! i am really satisfied with my project. This is
+            absolutly wonderfull!
+          </h2>
+          <div class="people-review">
+            <div class="people-img">
+              <img src="" alt="" />
+            </div>
+            <div class="people">
+              <h3 class="people-name">Onana</h3>
+              <h3 class="people-job">Maestro painter</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submission-page">
+        <form action="\" method="post" required>
+          <h1 class="submission-title">Submission Form</h1>
+          <h2 class="submission-description">Please fill below this!</h2>
+          <div class="email-form">
+            <label for="email"> @ </label>
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+          <div class="title-form">
+            <label for="title">
+              <span class="material-symbols-outlined"> info </span>
+            </label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Title"
+              minlength="5"
+            />
+          </div>
+          <div class="desc-form">
+            <label for="desc">
+              <span class="material-symbols-outlined"> tooltip_2 </span>
+            </label>
+            <input
+              type="text"
+              name="desc"
+              id="desc"
+              placeholder="Description"
+              minlength="10"
+            />
+          </div>
+          <div class="tags-form">
+            <label
+              ><input type="checkbox" name="tags" value="Painting" />
+              Painting</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Abstract Art" />
+              Abstract Art</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Oil Painting" /> Oil
+              Painting</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Sculpture" />
+              Sculpture</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Modern Art" /> Modern
+              Art</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Acrylic Painting" />
+              Acrylic Painting</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Curated Paint" />
+              Curated Paint</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Pop Art" /> Pop
+              Art</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="Graffiti" />
+              Graffiti</label
+            >
+          </div>
+          <div class="check-form">
+            <h3>Is this generated by AI?</h3>
+            <div class="option">
+              <input type="radio" name="check" id="ai-yes" value="yes" />
+              <h3>Yes</h3>
+            </div>
+            <div class="option">
+              <input type="radio" name="check" id="ai-no" value="no" />
+              <h3>No</h3>
+            </div>
+          </div>
+          <div class="upload-form">
+            <h3>Upload Your Artwork:</h3>
+            <input type="file" id="upload" />
+          </div>
+
+          <button class="submit" value="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="submission.js"></script>
+  </body>
+</html>
